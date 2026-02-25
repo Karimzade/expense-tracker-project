@@ -17,6 +17,7 @@ from .storage import load_csv, save_csv
 
 DATA_PATH = Path(__file__).resolve().parent / "data" / "ledger.csv"
 
+#
 def print_tx(tx: dict, i: int | None = None) -> None:
     prefix = f"{i:>3}. " if i is not None else ""
     note = tx.get("note", "")
